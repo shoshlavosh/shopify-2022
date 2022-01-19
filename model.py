@@ -42,7 +42,7 @@ class Item(db.Model):
         return f'<Item item_id={self.item_id} item_name={self.item_name} item_description={self.item_description} qty_in_lbs={self.qty_in_lbs}>'
 
 
-def connect_to_db(app, db_uri="postgresql:///items", echo=True):
+def connect_to_db(app, db_uri="postgresql:///inventory", echo=True):
     app.config["SQLALCHEMY_DATABASE_URI"] = db_uri
     app.config["SQLALCHEMY_ECHO"] = echo
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False

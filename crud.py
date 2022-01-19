@@ -59,7 +59,7 @@ def create_item(item_name, item_description,
     return item
 
 
-def get_item():
+def get_items():
     """Return all inventory items"""
 
     return Item.query.all()
