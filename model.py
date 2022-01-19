@@ -38,7 +38,7 @@ class Item(db.Model):
     qty_in_lbs = db.Column(db.Integer)
 
     def __repr__(self):
-        """Show info about item"""
+        """Show info about inventory item"""
         return f'<Item item_id={self.item_id} item_name={self.item_name} item_description={self.item_description} qty_in_lbs={self.qty_in_lbs}>'
 
 
