@@ -30,9 +30,9 @@ for n in range(10):
     item_name = f"{n} test item"
     item_description = f"{n} test item description"
     date_added = "2022-01-01"
-    size_in_lbs = n
+    qty_in_lbs = n
 
     item = crud.create_item(item_name, item_description,
-            date_added, size_in_lbs)
+            date_added, qty_in_lbs)
 
 
