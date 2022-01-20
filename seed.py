@@ -26,7 +26,7 @@ for n in range(10):
 
 
 #create fake inventory items to add to the database
-for n in range(20):
+for n in range(10):
     item_name = f"{n} test item"
     item_description = f"{n} test item description"
     date_added = "2022-01-01"

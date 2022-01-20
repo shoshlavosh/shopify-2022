@@ -31,7 +31,7 @@ def edit_item(item_id, attribute, new_value):
 
 
 def delete_item(item_id):
-    """Delete an item from inventory using item_id"""
+    """Delete an item from inventory using its item_id"""
 
     del_item = Item.query.filter_by(item_id=item_id).one()
 
@@ -58,6 +58,12 @@ def item_search(keyword):
     for item in items:
         if keyword in item.item_description or keyword in item.item_name:
             return item
+
+
+def get_items_by_qty(inventory_count):
+    """Search for items by quantity in inventory"""
+
+    return Item.query.filter(Item.qty_in_lbs == inventory_count)
 
 
 def get_items():
